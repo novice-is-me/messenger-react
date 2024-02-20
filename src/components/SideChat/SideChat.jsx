@@ -2,8 +2,8 @@ import React from 'react'
 
 const SideChat = () => {
   return (
-    <div>
-      
+    <div className='container'>
+      yow
     </div>
   )
 }

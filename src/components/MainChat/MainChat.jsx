@@ -2,8 +2,8 @@ import React from 'react'
 
 const MainChat = () => {
   return (
-    <div>
-      
+    <div className='container'>
+      hehehe
     </div>
   )
 }

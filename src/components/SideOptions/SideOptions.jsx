@@ -2,8 +2,8 @@ import React from 'react'
 
 const SideOptions = () => {
   return (
-    <div>
-      
+    <div className='container'>
+        Options
     </div>
   )
 }
