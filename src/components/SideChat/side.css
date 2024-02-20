@@ -1,0 +1,13 @@
+.sideChat .row{
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    gap: 10px;
+}
+
+.sideChat .row .col{
+    border: 1px solid black;
+}
+
+.form-control{
+    border-radius: 20px;
+}

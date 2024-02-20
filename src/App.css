@@ -1,5 +1,4 @@
 .main-body .row{
     display: grid;
-    grid-template-columns: auto 2fr 4fr 1fr;
-    gap: 10px;
+    grid-template-columns: auto 1fr;
 }
