@@ -19,6 +19,16 @@
     font-size: 1rem;
 }
 
+.chat-info-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chat-info-container p{
+    font-size: .8rem;
+}
+
 .img-contain{
     width: 25%;
 }

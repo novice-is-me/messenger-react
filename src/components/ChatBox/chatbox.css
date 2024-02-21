@@ -1,0 +1,13 @@
+.chatBoxComponent h4{
+    padding: 1rem;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: .8rem;
+}
+
+.chatBoxComponent img{
+    width: 7%;
+    height: 7%;
+    border-radius: 50%;
+}   

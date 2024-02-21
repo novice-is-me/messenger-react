@@ -13,12 +13,8 @@
 .mainChat-column,
 .options-column{
     border: 1px solid black;
-    height: 100vh;
-    
-}
-
-.sideChat-column{
     padding-top: 1.25rem !important;
+    height: 100vh;
 }
 
 .form-control{

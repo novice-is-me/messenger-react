@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './side.css'
 import { FaRegPenToSquare } from "react-icons/fa6";
 import MainChat from '../MainChat/MainChat';
 import SideOptions from '../SideOptions/SideOptions';
 import ChatComponent from '../ChatComponents/ChatComponents';
+import {dataProfile} from '../../DataFiles/chat'
 
 const SideChat = () => {
+
+  const [clickedMessage, setClickedMessage] = useState('')
+
+  const onItemClick = (item) =>{
+    setClickedMessage(item)
+    console.log(item);
+  }
+
   return (
     <div className='sideChat h-100 border border-black'>
       <div className='row sideChat-row'>
@@ -22,11 +31,13 @@ const SideChat = () => {
             </div>
           </div>
           <div className='sideChat-container3'>
-            <ChatComponent/>
+            <ChatComponent dataProfile={dataProfile} onMessageClick={onItemClick}/>
           </div>
         </div>
         <div className='mainChat-column col'>
-          <MainChat/>
+          {clickedMessage && ( 
+            <MainChat clickedMessage={clickedMessage}/>
+          )}
         </div>
         <div className='options-column col'>
           <SideOptions/>

@@ -9,18 +9,17 @@ function App() {
 return (
     <div>
         <BrowserRouter>
-        <div className='main-body'>
-            <div className='row main-body-row'>
-                <div className='col'><SideNavbar/></div>
-                <div className='col ps-0'>
-                    <Routes>
-                        <Route path="/message" element={<SideChat />} /> 
-                        <Route path="/main-message" element={<MainChat/>}/>
-                    </Routes>
+            <div className='main-body'>
+                <div className='row main-body-row'>
+                    <div className='col'><SideNavbar/></div>
+                    <div className='col ps-0'>
+                        <Routes>
+                            <Route path="/message" element={<SideChat />} /> 
+                        </Routes>
+                    </div>
                 </div>
             </div>
-        </div>
-    </BrowserRouter>
+        </BrowserRouter>
     </div>
   )
 }

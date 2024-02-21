@@ -1,0 +1,23 @@
+.mainChat-img img{
+    width: 10%;
+    border-radius: 50%;
+}
+
+.mainChat-container{
+    display: grid !important;
+    
+}
+
+.mainChat-img h2{
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.mainChat-options span:hover{
+    cursor: pointer;
+}
+
+.mainChat-message{
+
+}
