@@ -1,11 +1,16 @@
 import React from 'react'
 import './chatbox.css'
 
-const ChatBoxComponent = ({convo, image}) => {
+const ChatBoxComponent = ({convo, image, firstName}) => {
   return (
-    <div className='chatBoxComponent d-flex align-items-center'>
-      <img src={image} alt="" className='img-fluid'/>
-      <h4 style={{borderColor: 'yellow', marginLeft: ".7rem"}}>{convo}</h4>
+    <div className='chatBoxComponent'>
+      <p>{firstName}</p>
+      <div className='d-flex align-items-center'>
+        <img src={image} alt="" className='img-fluid'/>
+        <div className='chatBoxComponent-message border border-2 w-50'>
+          <h4>{convo}</h4>
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,7 +1,11 @@
 import {
     person1,
     person2,
-    person3
+    person3,
+    person11,
+    person12,
+    person13,
+    person14
 } from './image.js'
 
 // export const profile = [
@@ -37,29 +41,33 @@ export const dataProfile = {
           {
             id: 1,
             name: "Madel",
-            img: person1,
+            img: person11, 
             message: "I update the calendar and re-reschedule your new hearing Atty. Mansalas."
           },
           {
             id: 2,
             name: "Atty. Raphael",
-            img: "person2.jpg",
+            img: person12,
             message: "Noted. Thank you."
           },
           {
             id: 3,
             name: "Atty.Marvin",
-            img: "person3.jpg",
+            img: person13,
             message: "I can't attach any files on my schedule calendar. Anyone in the support can help me for this?",
             message2: "Thank you."
           },
           {
             id: 4,
             name: "Christine Joy",
-            img: "person3.jpg",
+            img: person14,
             message: "Me too. I can't update the following details in y schedule."
           }
-        ]
+        ],
+      response: [
+        "Noted Atty. We Will fix it as soon as possible",
+        "We understand the inconvenience caused and assure you that our team is actively working to accomodate and resolve the problem. Your patience is highly appreciated."
+      ]
       },
       {
         id: 2,

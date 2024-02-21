@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './mainchat.css'
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import ChatBoxComponent from '../ChatBox/ChatBoxComponent';
 import MessageOne from '../MessageComponents/MessageOne/MessageOne';
+import FormComponent from '../FormComponent/FormComponent';
 
 const MainChat = ({clickedMessage}) => {
+  const [newReply, setNewReply] = useState([])
+  
   return (
     <div className='mainChat'>
       <div className='col mainChat-container d-flex flex-column'>
-        <div className='row'>
+        <div className='row mainChat1'>
           <div className='d-flex border border-bottom mainChat-header '>
             <div className='mainChat-img d-flex align-items-center'>
               <img src={clickedMessage.persons[0].img} alt="" className='img-fluid'/>
@@ -21,26 +24,21 @@ const MainChat = ({clickedMessage}) => {
             </div>
           </div>
         </div>
-        <div className='row mainChat-message pt-5'>
-          <div>
+        <div className='row mainChat-message pt-3'>
           <div>
             {clickedMessage.groupName === 'SMJ Law Firm' ? (
-              <MessageOne convo={clickedMessage}/>
+              <MessageOne convo={clickedMessage} newReply={newReply}/>
             ) : clickedMessage.groupName === 'Mansala Law Firm' ? (
               <ChatBoxComponent  convo={clickedMessage}/>
             ) : clickedMessage.groupName === 'GPA Law Firm' ? (
               <ChatBoxComponent  convo={clickedMessage}/>
             ) : null}
           </div>
-          </div>
         </div>
-        <div className='row mainChat-send'>
-
+        <div className='row mainChat-send pt-1'>
+          <FormComponent convo={clickedMessage} newReply={newReply} setNewReply={setNewReply}/>
         </div>
       </div>
-
-      
-     
     </div>
   )
 }

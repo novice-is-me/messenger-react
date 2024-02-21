@@ -1,0 +1,7 @@
+.messageOne-container{
+    height: 80vh;
+    border: 1px solid black;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
