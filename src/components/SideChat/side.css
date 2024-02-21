@@ -1,13 +1,32 @@
-.sideChat .row{
+.sideChat{
+    padding-right: 1rem;
+
+}
+
+.sideChat .sideChat-row{
     display: grid;
-    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-columns: 2fr 3fr 2fr;
     gap: 10px;
 }
 
-.sideChat .row .col{
+.sideChat-column,
+.mainChat-column,
+.options-column{
     border: 1px solid black;
+    height: 100vh;
+    
+}
+
+.sideChat-column{
+    padding-top: 1.25rem !important;
 }
 
 .form-control{
     border-radius: 20px;
+}
+
+.sideChat-container1 h1{
+    font-family: var(--font-headings);
+    font-weight: 700;
+    font-size: 1.6rem;
 }

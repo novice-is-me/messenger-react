@@ -7,11 +7,11 @@ import ChatComponent from '../ChatComponents/ChatComponents';
 
 const SideChat = () => {
   return (
-    <div className='sideChat px-4'>
-      <div className='row'>
+    <div className='sideChat h-100 border border-black'>
+      <div className='row sideChat-row'>
         <div className='sideChat-column col'>
-          <div className='sideChat-container1 d-flex align-items-center justify-content-between mb-2'>
-            <h1>Chat</h1> 
+          <div className='sideChat-container1 d-flex justify-content-between mb-2'>
+            <h1>Chats</h1> 
             <a href="">{<FaRegPenToSquare size={25} color='black'/>}</a> 
           </div>
           <div className='sideChat-container2'>

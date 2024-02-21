@@ -1,0 +1,24 @@
+.img-chat{
+    border-radius: 50%;
+    width: 60%;
+}
+
+.chat-image-container{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+
+.chatComponent-container:hover{
+    background-color: #777676;
+    cursor: pointer;
+}
+
+.chat-info-container h5{
+    font-size: 1rem;
+}
+
+.img-contain{
+    width: 25%;
+}

@@ -3,7 +3,7 @@ import React from 'react'
 const MainChat = () => {
   return (
     <div className='container'>
-      MAIN CHAT!! 
+    YOW
     </div>
   )
 }

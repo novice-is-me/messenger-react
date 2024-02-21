@@ -1,4 +1,14 @@
-.main-body .row{
+.main-body .main-body-row{
     display: grid;
     grid-template-columns: auto 1fr;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p,
+h5{
+    margin-bottom: 0;
 }
