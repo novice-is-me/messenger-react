@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import ChatBoxComponent from '../../ChatBox/ChatBoxComponent'
-import ReplyComponent from '../../ReplyComponent/ReplyComponent'
+import ChatBoxComponent from '../ChatBox/ChatBoxComponent'
+import ReplyComponent from '../ReplyComponent/ReplyComponent'
 
 const MessageTwo = ({convo, newReply}) => {
   const [addReply, setAddReply] = useState([])
@@ -10,19 +10,26 @@ const MessageTwo = ({convo, newReply}) => {
   }, [newReply])
 
   return (
-    <div className='messageOne-container'>
-      <div>DATE</div>
+    <div className='messageTwo-container'>
       <ChatBoxComponent convo={convo.persons[0].message} 
         image={convo.persons[0].img}
         firstName={convo.persons[0].name}/>
       <ChatBoxComponent convo={convo.persons[1].message}
        image={convo.persons[1].img}
        firstName={convo.persons[1].name}/>
-       <div>DATE</div>
+       <ReplyComponent convo={convo.response[0]}/>
        <ChatBoxComponent convo={convo.persons[2].message}
        image={convo.persons[2].img}
        firstName={convo.persons[2].name}/>
-       
+       <ChatBoxComponent convo={convo.persons[1].message2}
+       image={convo.persons[1].img}
+       firstName={convo.persons[1].name}/>
+       <ReplyComponent convo={convo.response[1]}/>
+       <ChatBoxComponent convo={convo.persons[0].message2}
+       image={convo.persons[0].img}
+       firstName={convo.persons[0].name}/>
+
+
         {addReply.map((reply, index) => (
         <div key={index}>
           {/* <p>{"Here is " + reply}</p>
@@ -31,7 +38,7 @@ const MessageTwo = ({convo, newReply}) => {
         <div>
           {console.log(reply)}
           <p>{"Here is " + reply}</p>
-          <ReplyComponent convo={reply[reply.length - 1]} />
+          <ReplyComponent  key={index} convo={reply[reply.length - 1]} />
         </div>
         ) : null}
         </div>

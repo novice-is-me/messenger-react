@@ -17,3 +17,7 @@
 .mainChat-options span:hover{
     cursor: pointer;
 }
+
+.mainChat-options span{
+    padding-right: 1rem;
+}

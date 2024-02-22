@@ -3,9 +3,11 @@ import './mainchat.css'
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import ChatBoxComponent from '../ChatBox/ChatBoxComponent';
-import MessageOne from '../MessageComponents/MessageOne/MessageOne';
+import MessageOne from '../MessageComponents/MessageOne';
 import FormComponent from '../FormComponent/FormComponent';
-import MessageTwo from '../MessageComponents/MessageTwo/MessageTwo';
+import MessageTwo from '../MessageComponents/MessageTwo';
+import MessageThree from '../MessageComponents/MessageThree';
+import NewForm from '../FormComponent/NewForm';
 
 const MainChat = ({clickedMessage}) => {
   const [newReply, setNewReply] = useState([])
@@ -16,29 +18,31 @@ const MainChat = ({clickedMessage}) => {
         <div className='row mainChat1'>
           <div className='d-flex border border-bottom mainChat-header '>
             <div className='mainChat-img d-flex align-items-center'>
-              <img src={clickedMessage.persons[0].img} alt="" className='img-fluid'/>
+              <img src={clickedMessage.profile} alt="" className='img-fluid'/>
               <h2>{clickedMessage.groupName}</h2>
             </div>
             <div className='mainChat-options d-flex justify-content-between align-items-center'>
-              <span style={{paddingRight: "1rem"}}><IoIosAddCircleOutline size={25}/></span>
-              <span style={{paddingRight: "1rem"}}><HiOutlineDotsHorizontal size={25}/></span>
+              <span><IoIosAddCircleOutline size={25}/></span>
+              <span><HiOutlineDotsHorizontal size={25}/></span>
             </div>
           </div>
         </div>
-        <div className='row mainChat-message pt-3'>
+        <div className='row mainChat-message'>
           <div>
             {clickedMessage.groupName === 'SMJ Law Firm' ? (
               <MessageOne convo={clickedMessage} newReply={newReply}/>
-            ) : clickedMessage.groupName === 'Mansala Law Firm' ? (
+            ) : clickedMessage.groupName === 'Buddies 4Life' ? (
               <MessageTwo convo={clickedMessage} newReply={newReply}/>
-            ) : clickedMessage.groupName === 'GPA Law Firm' ? (
-              <ChatBoxComponent  convo={clickedMessage}/>
+            ) : clickedMessage.groupName === 'Jennie Kim' ? (
+              <MessageThree  convo={clickedMessage}/>
             ) : null}
           </div>
         </div>
-        <div className='row mainChat-send pt-1'>
-          <FormComponent convo={clickedMessage} newReply={newReply} setNewReply={setNewReply}/>
-        </div>
+        {/* <div className='row mainChat-send pt-1'>
+          <FormComponent convo={clickedMessage} newReply={newReply} setNewReply={setNewReply}/> */}
+          {/* {`New reply sa labas: ${newReply}`} */}
+           
+        {/* </div> */}
       </div>
     </div>
   )

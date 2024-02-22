@@ -2,9 +2,9 @@ import React, { useState,useEffect, useRef } from 'react'
 import { IoAddCircle, IoSend } from "react-icons/io5";
 import { dataProfile } from '../../DataFiles/chat';
 
-const FormComponent = ({convo, newReply, setNewReply}) => {
-
-    const [reply, setReply] = useState(''); 
+const NewForm = ({convo, addReply, setAddReply}) => {
+    // const [newReply, setNewReply] = useState([])
+    const [reply, setReply] = useState('');
     const inputRef = useRef();
 
     const handleSubmit = (e) =>{
@@ -21,10 +21,10 @@ const FormComponent = ({convo, newReply, setNewReply}) => {
             // console.log(convo.response.length);
             // setNewReply([...newReply, reply])
             convo.response.push(reply)
-            console.log(convo.response);
-            console.log("before: "+ reply);
-            setNewReply([...newReply, reply])
-            console.log("Message:"+ reply);
+            console.log("Response 3" + convo.response);
+            console.log("Reply: "+ reply);
+            setAddReply([...addReply, reply]); //undefined
+            console.log("New Reply 3: "+ reply)
             
           }
         })
@@ -58,4 +58,4 @@ const FormComponent = ({convo, newReply, setNewReply}) => {
   )
 }
 
-export default FormComponent
+export default NewForm

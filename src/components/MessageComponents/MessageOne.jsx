@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './messageOne.css'
-import ChatBoxComponent from '../../ChatBox/ChatBoxComponent'
-import ReplyComponent from '../../ReplyComponent/ReplyComponent'
+import ChatBoxComponent from '../ChatBox/ChatBoxComponent'
+import ReplyComponent from '../ReplyComponent/ReplyComponent'
 
 const MessageOne = ({convo, newReply}) => {
   const [addReply, setAddReply] = useState([])
@@ -12,14 +12,12 @@ const MessageOne = ({convo, newReply}) => {
 
   return (
     <div className='messageOne-container'>
-      <div>DATE</div>
       <ChatBoxComponent convo={convo.persons[0].message} 
         image={convo.persons[0].img}
         firstName={convo.persons[0].name}/>
       <ChatBoxComponent convo={convo.persons[1].message}
        image={convo.persons[1].img}
        firstName={convo.persons[1].name}/>
-       <div>DATE</div>
        <ChatBoxComponent convo={convo.persons[2].message}
        image={convo.persons[2].img}
        firstName={convo.persons[2].name}/>

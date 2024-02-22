@@ -1,10 +1,13 @@
-import person1 from '../assets/person1.jpg'
+import person1 from '../assets/person1.png'
 import person2 from '../assets/person2.jpg'
 import person3 from '../assets/person3.png'
 import person11 from '../assets/person11.jpg'
 import person12 from '../assets/person12.jpg'
 import person13 from '../assets/person13.jpg'
 import person14 from '../assets/person14.jpg'
+import person22 from '../assets/person22.jpg'
+import person23 from '../assets/person23.jpg'
+import person31 from '../assets/person31.jpg'
 import icon1 from '../assets/icon1.png'
 import icon2 from '../assets/icon2.png'
 import icon3 from '../assets/icon3.png'
@@ -24,6 +27,9 @@ export {
     person12,
     person13,
     person14,
+    person22,
+    person23,
+    person31,
     icon1,
     icon2,
     icon3,

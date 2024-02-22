@@ -6,6 +6,9 @@ import {
     person12,
     person13,
     person14,
+    person22,
+    person23,
+    person31,
     icon1,
     icon2,
     icon3,
@@ -23,6 +26,7 @@ export const dataProfile = {
       {
         id: 1,
         groupName: "SMJ Law Firm",
+        profile: person1,
         persons: [
           {
             id: 1,
@@ -57,50 +61,55 @@ export const dataProfile = {
       },
       {
         id: 2,
-        groupName: "Mansala Law Firm",
+        groupName: "Buddies 4Life",
+        profile: person3,
         persons: [
           {
             id: 4,
-            name: "Person 4",
+            name: "Luffy",
             img: person2,
-            message: "Message 1 for Person 4"
+            message: "Hey everyone what's going on!",
+            message2: "NAKAMA DONT FORGOT THE MEAT"
           },
           {
             id: 5,
-            name: "Person 5",
-            img: "person5.jpg",
-            message: "Message 1 for Person 5"
+            name: "Zoro",
+            img: person22,
+            message: "Doing great here just watching some anime",
+            message2: "Then I'm going to!"
           },
           {
             id: 6,
-            name: "Person 6",
-            img: "person6.jpg",
-            message: "Message 1 for Person 6"
+            name: "Nami",
+            img: person23,
+            message: "I'll come over at your place captain!!" 
           }
+        ],
+        response:[
+          "Let's watch haikyu movie in Japan! It will be so much fun!!",
+          "Let me come too Hinata"
         ]
       },
       {
         id: 3,
-        groupName: "GPA Law Firm",
+        groupName: "Jennie Kim",
+        profile: person31,
         persons: [
           {
             id: 7,
-            name: "Person 7",
-            img: person3,
-            message: "Message 1 for Person 7"
-          },
-          {
-            id: 8,
-            name: "Person 8",
-            img: "person8.jpg",
-            message: "Message 1 for Person 8"
-          },
-          {
-            id: 9,
-            name: "Person 9",
-            img: "person9.jpg",
-            message: "Message 1 for Person 9"
+            name: "Jennie Kim",
+            img: person31,
+            message: "Yow! How's your week going?",
+            message2: "I feel you! Work has been crazy. Too much photoshoot and mv shooting.",
+            message3: "Yeah how about going to Mt Pinatubo this saturday? Then let's grab some lunch along the way",
+            message4: "No worries then we will just have a brunch"
           }
+        ],
+        response:[
+          "Hi Jennie! It's been so busy, but I'm hanging there hahahah",
+          "Yeah literally. Have any plans this saturday?",
+          "I can't go to hiking due to my physical state but I can join you in brunch",
+          "Yeah yeah"
         ]
       }
     ]

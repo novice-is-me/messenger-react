@@ -1,0 +1,18 @@
+.messageOne-container,
+.messageTwo-container{
+    height: 86vh;
+    border: 1px solid black;
+    padding-top: 1rem;
+
+}
+
+.messageThree-container .sticky-send{
+    border: 1px solid green;
+} 
+
+.messageThree-container .messageThree-scroll{
+    height: 82vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}

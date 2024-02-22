@@ -12,19 +12,34 @@ const ChatComponents = ({dataProfile, onMessageClick}) => {
         }
     }
 
+    // function limitString (str, limit){
+    //     return str.substring()
+    // }
+
   return (
     <div className='chatComponent pt-3'>
-        
         {dataProfile.chatGroups.map((item, index)=>{
+            const lastIndex = item.response[item.response.length - 1];
             return <div key={index} className='chatComponent-container d-grid border border-1 p-2'>
                 <a href="" onClick={(e)=> {e.preventDefault();onMessageClick(item)}}>
                     <div className='row'>
                         <div className='pe-0 col-3 chat-image-container'>
-                            <img src={item.persons[0].img} alt="" className='img-fluid img-chat' />
+                            <img src={item.profile} alt="" className='img-fluid img-chat' />
                         </div>
                         <div className='col col-7 p-0 chat-info-container'>
                             <h5>{item.groupName}</h5>
-                            <p>{messageDot(item.persons[0].message,30)}</p>
+                            {/* {lastIndex.length > 30 ? 
+                            <p>{`You: ${messageDot(lastIndex,30)}`}</p> 
+                            : <p>{`You: ${lastIndex}`}</p>} */}
+                            
+                            
+                            <p>{`You: ${messageDot(lastIndex,30)}`}</p>
+                            {/* {item.response.length > 1 && 
+                            <p>{`You: ${messageDot(item.response[-1],35)}`}</p>} */}
+                            {/* <p>{"Here"+ lastMessage}</p> */}
+                            {/* {item.response.map((lastChat, index)=>{
+                                return <p key={index}>{lastChat.length-1}</p>
+                            })} */}
                         </div>
                         <div className='col col-2 p-0 d-flex align-items-center'>
                             <p style={{fontWeight:'bold'}}>1m</p>
