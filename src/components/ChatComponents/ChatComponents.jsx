@@ -12,10 +12,6 @@ const ChatComponents = ({dataProfile, onMessageClick}) => {
         }
     }
 
-    // function limitString (str, limit){
-    //     return str.substring()
-    // }
-
   return (
     <div className='chatComponent pt-3'>
         {dataProfile.chatGroups.map((item, index)=>{

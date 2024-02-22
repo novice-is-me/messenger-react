@@ -6,3 +6,7 @@
     height: 100vh;
     padding-top: 1.25rem !important;
 } 
+
+.sideBar-profile img{
+   border-radius: 50%;
+}

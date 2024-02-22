@@ -19,6 +19,7 @@ import icon8 from '../assets/icon8.png'
 import icon9 from '../assets/icon9.png'
 import icon10 from '../assets/icon10.png'
 import me from '../assets/me.jpg'
+import profile from '../assets/profile.jpg'
 
 export {
     person1,
@@ -41,5 +42,6 @@ export {
     icon8,
     icon9,
     icon10,
-    me
+    me,
+    profile
 } 

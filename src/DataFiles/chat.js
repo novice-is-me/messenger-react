@@ -83,7 +83,7 @@ export const dataProfile = {
             id: 6,
             name: "Nami",
             img: person23,
-            message: "I'll come over at your place captain!!" 
+            message: "I'll come over at your place captain!! What food do you want?" 
           }
         ],
         response:[

@@ -9,7 +9,8 @@
 }
 
 .chatBoxComponent img{
-    width: 6%;
+    width: 7%;
+    max-width: 5%;
     height: 7%;
     border-radius: 50%;
 }   

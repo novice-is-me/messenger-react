@@ -2,9 +2,9 @@
     width: 10%;
     border-radius: 50%;
 }
-
-.mainChat-container{
-    display: grid !important;  
+.mainChat .mainChat-container-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .mainChat-img h2{

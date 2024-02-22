@@ -9,7 +9,7 @@
 .messageThree-container .messageThree-scroll,
 .messageOne-container .messageOne-scroll,
 .messageTwo-container .messageTwo-scroll{
-    height: 82vh;
+    height: 80.5vh;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;

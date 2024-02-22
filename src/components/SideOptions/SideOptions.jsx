@@ -9,7 +9,7 @@ const SideOptions = ({clickedMessage}) => {
 
   return (
     <div className='sideOptions'>
-      <div className='sideOptions-container'>
+      <div className='sideOptions-container ms-4'>
         <div className='sideOptions-top d-flex flex-column align-items-center'> 
           <img src={clickedMessage.profile} alt="" className='img-fluid'/>
           <h2>{clickedMessage.groupName}</h2>

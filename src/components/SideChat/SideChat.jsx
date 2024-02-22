@@ -35,14 +35,8 @@ const SideChat = () => {
           </div>
         </div>
         <div className='mainChat-column col'>
-          {/* //try to iterate it */}
           {clickedMessage && ( 
             <MainChat clickedMessage={clickedMessage}/>
-          )}
-        </div>
-        <div className='options-column col'>
-          {clickedMessage && (
-            <SideOptions clickedMessage={clickedMessage} />
           )}
         </div>
       </div>
