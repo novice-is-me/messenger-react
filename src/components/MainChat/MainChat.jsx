@@ -2,15 +2,11 @@ import React, { useState } from 'react'
 import './mainchat.css'
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
-import ChatBoxComponent from '../ChatBox/ChatBoxComponent';
 import MessageOne from '../MessageComponents/MessageOne';
-import FormComponent from '../FormComponent/FormComponent';
 import MessageTwo from '../MessageComponents/MessageTwo';
 import MessageThree from '../MessageComponents/MessageThree';
-import NewForm from '../FormComponent/NewForm';
 
 const MainChat = ({clickedMessage}) => {
-  const [newReply, setNewReply] = useState([])
   
   return (
     <div className='mainChat'>
@@ -30,19 +26,14 @@ const MainChat = ({clickedMessage}) => {
         <div className='row mainChat-message'>
           <div>
             {clickedMessage.groupName === 'SMJ Law Firm' ? (
-              <MessageOne convo={clickedMessage} newReply={newReply}/>
+              <MessageOne convo={clickedMessage}/>
             ) : clickedMessage.groupName === 'Buddies 4Life' ? (
-              <MessageTwo convo={clickedMessage} newReply={newReply}/>
+              <MessageTwo convo={clickedMessage}/>
             ) : clickedMessage.groupName === 'Jennie Kim' ? (
               <MessageThree  convo={clickedMessage}/>
             ) : null}
           </div>
         </div>
-        {/* <div className='row mainChat-send pt-1'>
-          <FormComponent convo={clickedMessage} newReply={newReply} setNewReply={setNewReply}/> */}
-          {/* {`New reply sa labas: ${newReply}`} */}
-           
-        {/* </div> */}
       </div>
     </div>
   )

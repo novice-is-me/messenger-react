@@ -1,16 +1,14 @@
-.messageOne-container,
-.messageTwo-container{
-    height: 86vh;
-    border: 1px solid black;
-    padding-top: 1rem;
 
-}
 
-.messageThree-container .sticky-send{
+.messageThree-container .sticky-send,
+.messageOne-container .sticky-send,
+.messageTwo-container .sticky-send{
     border: 1px solid green;
 } 
 
-.messageThree-container .messageThree-scroll{
+.messageThree-container .messageThree-scroll,
+.messageOne-container .messageOne-scroll,
+.messageTwo-container .messageTwo-scroll{
     height: 82vh;
     overflow-y: auto;
     scrollbar-width: thin;

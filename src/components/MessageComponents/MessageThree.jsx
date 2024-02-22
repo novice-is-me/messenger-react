@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import ChatBoxComponent from '../ChatBox/ChatBoxComponent'
 import ReplyComponent from '../ReplyComponent/ReplyComponent'
 import NewForm from '../FormComponent/NewForm'
+import './messageOne.css'
 
 const MessageThree = ({convo}) => {
   const [addReply, setAddReply] = useState([])
-
-  // useEffect(()=>{
-  //   setAddReply(prevAddReply =>[...addReply, newReply])
-  // }, [newReply])
 
   return (
     <div className='messageThree-container d-flex flex-column'>
@@ -35,7 +32,6 @@ const MessageThree = ({convo}) => {
               {reply.length !==0 ? (
           <div>
             {console.log(reply)}
-            <p>{"Here is " + reply}</p>
             <ReplyComponent convo={reply} />
           </div>
           ) : null}

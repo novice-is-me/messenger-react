@@ -18,7 +18,8 @@ import {
     icon7,
     icon8,
     icon9,
-    icon10
+    icon10,
+    me
 } from './image.js'
 
 export const dataProfile = {
@@ -56,7 +57,7 @@ export const dataProfile = {
         ],
       response: [
         "Noted Atty. We Will fix it as soon as possible",
-        "We understand the inconvenience caused and assure you that our team is actively working to accomodate and resolve the problem. Your patience is highly appreciated."
+        "We understand the inconvenience caused and we are very sorry!"
       ]
       },
       {
@@ -103,6 +104,11 @@ export const dataProfile = {
             message2: "I feel you! Work has been crazy. Too much photoshoot and mv shooting.",
             message3: "Yeah how about going to Mt Pinatubo this saturday? Then let's grab some lunch along the way",
             message4: "No worries then we will just have a brunch"
+          },
+          {
+            id: 8,
+            name: "Hinata S.",
+            img: me
           }
         ],
         response:[
