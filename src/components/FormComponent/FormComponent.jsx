@@ -17,13 +17,18 @@ const FormComponent = ({convo, newReply, setNewReply}) => {
           if (item.groupName === convo.groupName){
             // const addedReply = convo.response.push(reply)
             // console.log(addedReply);
-            console.log(newReply);
-            console.log(convo.response.length);
+            // console.log(newReply);
+            // console.log(convo.response.length);
+            // setNewReply([...newReply, reply])
+            convo.response.push(reply)
+            console.log(convo.response);
+            console.log("before: "+ reply);
             setNewReply([...newReply, reply])
+            console.log("bago: "+ reply);
+            
           }
         })
-        console.log(reply);
-        setReply(reply);
+        // setReply(reply);
         setReply('')
       }
     }

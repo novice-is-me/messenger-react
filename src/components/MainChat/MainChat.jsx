@@ -5,6 +5,7 @@ import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import ChatBoxComponent from '../ChatBox/ChatBoxComponent';
 import MessageOne from '../MessageComponents/MessageOne/MessageOne';
 import FormComponent from '../FormComponent/FormComponent';
+import MessageTwo from '../MessageComponents/MessageTwo/MessageTwo';
 
 const MainChat = ({clickedMessage}) => {
   const [newReply, setNewReply] = useState([])
@@ -29,7 +30,7 @@ const MainChat = ({clickedMessage}) => {
             {clickedMessage.groupName === 'SMJ Law Firm' ? (
               <MessageOne convo={clickedMessage} newReply={newReply}/>
             ) : clickedMessage.groupName === 'Mansala Law Firm' ? (
-              <ChatBoxComponent  convo={clickedMessage}/>
+              <MessageTwo convo={clickedMessage} newReply={newReply}/>
             ) : clickedMessage.groupName === 'GPA Law Firm' ? (
               <ChatBoxComponent  convo={clickedMessage}/>
             ) : null}

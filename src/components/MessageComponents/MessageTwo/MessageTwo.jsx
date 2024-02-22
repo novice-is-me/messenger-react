@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './messageOne.css'
 import ChatBoxComponent from '../../ChatBox/ChatBoxComponent'
 import ReplyComponent from '../../ReplyComponent/ReplyComponent'
 
-const MessageOne = ({convo, newReply}) => {
+const MessageTwo = ({convo, newReply}) => {
   const [addReply, setAddReply] = useState([])
 
   useEffect(()=>{
@@ -23,21 +22,7 @@ const MessageOne = ({convo, newReply}) => {
        <ChatBoxComponent convo={convo.persons[2].message}
        image={convo.persons[2].img}
        firstName={convo.persons[2].name}/>
-       <ChatBoxComponent convo={convo.persons[3].message}
-       image={convo.persons[3].img}
-       firstName={convo.persons[3].name}/>
-       <ReplyComponent convo={convo.response[0]}/>
-       <ChatBoxComponent convo={convo.persons[2].message2}
-       image={convo.persons[2].img}
-       firstName={convo.persons[2].name}/>
-       <ReplyComponent convo={convo.response[1]}/>
-        
-        {/* {convo.response.length <= 3 && (
-          <div>
-            <p>{"Here is"+ newReply}</p>
-            <ReplyComponent convo={latestReply}/>
-          </div>
-        )} */}
+       
         {addReply.map((reply, index) => (
         <div key={index}>
           {/* <p>{"Here is " + reply}</p>
@@ -55,5 +40,5 @@ const MessageOne = ({convo, newReply}) => {
   )
 }
 
-export default MessageOne
+export default MessageTwo
 

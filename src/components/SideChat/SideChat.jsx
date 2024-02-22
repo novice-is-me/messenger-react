@@ -12,7 +12,7 @@ const SideChat = () => {
 
   const onItemClick = (item) =>{
     setClickedMessage(item)
-    console.log(item);
+    console.log("Item:"+item);
   }
 
   return (
@@ -35,12 +35,15 @@ const SideChat = () => {
           </div>
         </div>
         <div className='mainChat-column col'>
+          {/* //try to iterate it */}
           {clickedMessage && ( 
             <MainChat clickedMessage={clickedMessage}/>
           )}
         </div>
         <div className='options-column col'>
-          <SideOptions/>
+          {clickedMessage && (
+            <SideOptions clickedMessage={clickedMessage} />
+          )}
         </div>
       </div>
     </div>

@@ -5,32 +5,18 @@ import {
     person11,
     person12,
     person13,
-    person14
+    person14,
+    icon1,
+    icon2,
+    icon3,
+    icon4,
+    icon5,
+    icon6,
+    icon7,
+    icon8,
+    icon9,
+    icon10
 } from './image.js'
-
-// export const profile = [
-//     {   
-//         index: 1,
-//         img: person1,
-//         title: "Shoyo Hinata",
-//         message: "Parang mga around 10 am ata",
-//         previousMessage: "I think may meeting tayo mamaya diko lang matandaan"
-//     },
-//     {
-//         index: 2,
-//         img: person2,
-//         title: "Monkey D. Luffy",
-//         message: "I'm gonna be the king of the pirates!"
-//     },
-//     {
-//         index: 3,
-//         img: person3,
-//         title: "Anime Lovers",
-//         message: "Nood tayo sine bukas"
-//     }
-// ]
-
-// data.js
 
 export const dataProfile = {
     chatGroups: [
@@ -119,4 +105,71 @@ export const dataProfile = {
       }
     ]
   };
+
   
+  export const dataOptions = {
+    Option1: [
+      {
+        name: "Customize chat",
+        options:[
+          {
+            name: "Change chat name",
+            icon: icon1
+          },
+          {
+            name: "Change photo",
+            icon: icon2
+          },
+          {
+            name: "Change theme",
+            icon: icon3
+          },
+          {
+            name: "Change emoji",
+            icon: icon4
+          },
+          {
+            name: "Edit nicknames",
+            icon: icon5
+          }
+        ]
+      }
+    ],
+    Option2: [
+      {
+        name: "Media and Files",
+        options:[{
+          name: "Media",
+          icon: icon6
+        },
+        {
+          name: "Files",
+          icon: icon2
+        },
+        {
+          name: "Links",
+          icon: icon7
+        }
+        ]
+      }
+    ],
+    Option3: [
+      {
+        name: "Privacy and Support",
+        options:[
+          {
+            name: "Mute notifications",
+            icon: icon8
+          },
+          {
+            name: "Report",
+            icon: icon9
+          },
+          {
+            name: "Leave group",
+            icon: icon10
+          }
+        ]
+      }
+    ]
+  };

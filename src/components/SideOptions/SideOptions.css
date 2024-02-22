@@ -1,0 +1,17 @@
+.sideOptions-top img{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.sideOptions-top h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-headings);
+    padding-top: 1rem;
+}
+
+.sideOptions-middle a{
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    padding: .35rem;
+}
