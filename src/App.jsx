@@ -2,7 +2,6 @@ import './App.css'
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import SideNavbar from './components/SideNavbar/SideNavbar'
 import SideChat from './components/SideChat/SideChat'
-import MainChat from './components/MainChat/MainChat'
 
 function App() {
 

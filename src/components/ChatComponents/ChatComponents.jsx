@@ -29,7 +29,7 @@ const ChatComponents = ({dataProfile, onMessageClick}) => {
                             : <p>{`You: ${lastIndex}`}</p>} */}
                             
                             
-                            <p>{`You: ${messageDot(lastIndex,25)}`}</p>
+                            <p>{`You: ${messageDot(lastIndex,20)}`}</p>
                             {/* {item.response.length > 1 && 
                             <p>{`You: ${messageDot(item.response[-1],35)}`}</p>} */}
                             {/* <p>{"Here"+ lastMessage}</p> */}

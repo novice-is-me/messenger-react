@@ -2,17 +2,18 @@ import React, { useState } from 'react'
 import './side.css'
 import { FaRegPenToSquare } from "react-icons/fa6";
 import MainChat from '../MainChat/MainChat';
-import SideOptions from '../SideOptions/SideOptions';
 import ChatComponent from '../ChatComponents/ChatComponents';
 import {dataProfile} from '../../DataFiles/chat'
+import SearchBar from './SearchBar';
 
 const SideChat = () => {
 
+  
   const [clickedMessage, setClickedMessage] = useState('')
 
   const onItemClick = (item) =>{
     setClickedMessage(item)
-    console.log("Item:"+item);
+    console.log("Item:"+clickedMessage);
   }
 
   return (
@@ -24,11 +25,7 @@ const SideChat = () => {
             <a href="">{<FaRegPenToSquare size={25} color='black'/>}</a> 
           </div>
           <div className='sideChat-container2'>
-            <div className='input-group'>
-              <input type="search" 
-                placeholder='Search Messenger'
-                className='form-control' />
-            </div>
+           <SearchBar data={dataProfile}/>
           </div>
           <div className='sideChat-container3'>
             <ChatComponent dataProfile={dataProfile} onMessageClick={onItemClick}/>
