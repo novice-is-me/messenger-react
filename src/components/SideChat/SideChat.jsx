@@ -16,7 +16,7 @@ const SideChat = () => {
   }
 
   return (
-    <div className='sideChat h-100 border border-black'>
+    <div className='sideChat h-100'>
       <div className='row sideChat-row'>
         <div className='sideChat-column col'>
           <div className='sideChat-container1 d-flex justify-content-between mb-2'>

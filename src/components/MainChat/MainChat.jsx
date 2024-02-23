@@ -20,7 +20,7 @@ const MainChat = ({clickedMessage}) => {
       <div className='mainChat-container d-flex'>
           <div className='mainChat-div'>
             <div className='row mainChat1'>
-              <div className='d-flex border border-bottom mainChat-header justify-content-between'>
+              <div className='d-flex mainChat-header justify-content-between'>
                 <div className='mainChat-img d-flex align-items-center'>
                   <img src={clickedMessage.profile} alt="" className='img-fluid'/>
                   <h2>{clickedMessage.groupName}</h2>

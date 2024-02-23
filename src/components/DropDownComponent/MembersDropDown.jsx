@@ -18,16 +18,16 @@ const MembersDropDown = ({options}) => {
             {!isClick ? <IoIosArrowForward size={20}/> : <IoIosArrowDown size={20}/>}
         </div>
             {isClick && (
-                <ul className='mt-0'>
+                <ul className='mt-0 p-0'>
                     {options.map((item, index) => (
-                        <div className='user-container d-flex'>
+                        <div className='user-container d-flex' key={index}>
                             <img src={item.img} alt="" className='img-fluid' />
                             <li key={index}>{item.name}</li>
                         </div>
                     ))}
                 </ul>
             )}
-        </div>
+    </div>
   )
 }
 

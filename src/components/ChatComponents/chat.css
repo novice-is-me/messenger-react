@@ -9,9 +9,11 @@
     padding-left: 0;
 }
 
-
+.chatComponent-container{
+    border-radius: 10px;
+}
 .chatComponent-container:hover{
-    background-color: #777676;
+    background-color: #f5f5f5;
     cursor: pointer;
 }
 

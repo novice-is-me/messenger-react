@@ -12,7 +12,7 @@ return (
             <div className='main-body'>
                 <div className='row main-body-row'>
                     <div className='col'><SideNavbar/></div>
-                    <div className='col ps-0'>
+                    <div className='col'>
                         <Routes>
                             <Route path="/message" element={<SideChat />} /> 
                         </Routes>

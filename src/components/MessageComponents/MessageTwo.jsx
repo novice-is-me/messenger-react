@@ -13,9 +13,6 @@ const MessageTwo = ({convo}) => {
         <ChatBoxComponent convo={convo.persons[0].message} 
           image={convo.persons[0].img}
           firstName={convo.persons[0].name}/>
-        <ChatBoxComponent convo={convo.persons[1].message}
-          image={convo.persons[1].img}
-          firstName={convo.persons[1].name}/>
         <ReplyComponent convo={convo.response[0]}/>
         <ChatBoxComponent convo={convo.persons[2].message}
           image={convo.persons[2].img}

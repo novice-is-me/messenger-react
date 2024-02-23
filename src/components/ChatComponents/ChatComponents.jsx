@@ -16,7 +16,7 @@ const ChatComponents = ({dataProfile, onMessageClick}) => {
     <div className='chatComponent pt-3'>
         {dataProfile.chatGroups.map((item, index)=>{
             const lastIndex = item.response[item.response.length - 1];
-            return <div key={index} className='chatComponent-container d-grid border border-1 p-2'>
+            return <div key={index} className='chatComponent-container d-grid p-2'>
                 <a href="" onClick={(e)=> {e.preventDefault();onMessageClick(item)}}>
                     <div className='row'>
                         <div className='pe-0 col-3 chat-image-container'>
@@ -29,7 +29,7 @@ const ChatComponents = ({dataProfile, onMessageClick}) => {
                             : <p>{`You: ${lastIndex}`}</p>} */}
                             
                             
-                            <p>{`You: ${messageDot(lastIndex,30)}`}</p>
+                            <p>{`You: ${messageDot(lastIndex,25)}`}</p>
                             {/* {item.response.length > 1 && 
                             <p>{`You: ${messageDot(item.response[-1],35)}`}</p>} */}
                             {/* <p>{"Here"+ lastMessage}</p> */}
