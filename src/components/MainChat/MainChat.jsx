@@ -13,6 +13,7 @@ const MainChat = ({clickedMessage}) => {
 
   const handleClick = () =>{
     setIsShow(!isShow);
+    console.log(isShow)
   }
   
   return (
@@ -43,7 +44,7 @@ const MainChat = ({clickedMessage}) => {
               </div>
             </div>
           </div>
-        {!isShow && (
+        {isShow && (
         <div className='sideChat w-50'>
             <SideOptions clickedMessage={clickedMessage}/>
         </div> )}

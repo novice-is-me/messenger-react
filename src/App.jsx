@@ -2,7 +2,6 @@ import './App.css'
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import SideNavbar from './components/SideNavbar/SideNavbar'
 import SideChat from './components/SideChat/SideChat'
-import MainChat from './components/MainChat/MainChat'
 
 function App() {
 
@@ -11,8 +10,8 @@ return (
         <BrowserRouter>
             <div className='main-body'>
                 <div className='row main-body-row'>
-                    <div className='col'><SideNavbar/></div>
-                    <div className='col'>
+                    <div className='col sideChat-main'><SideNavbar/></div>
+                    <div className='col mainChat-main'>
                         <Routes>
                             <Route path="/message" element={<SideChat />} /> 
                         </Routes>

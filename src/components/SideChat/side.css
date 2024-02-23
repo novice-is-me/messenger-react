@@ -20,6 +20,11 @@
     border-radius: 20px;
 }
 
+.sideChat-container1{
+    display: flex;
+    justify-content: space-between !important;
+}
+
 .sideChat-container1 h1{
     font-family: var(--font-headings);
     font-weight: 700;
@@ -29,4 +34,40 @@
 .sideChat-column{
     border-left: 0;
     padding-left: 0;
+}
+
+
+@media screen and (max-width: 600px){
+    .sideChat-container1 a{
+        display: none;
+    }
+
+    .sideChat-container1{
+        justify-content: center !important;
+    }
+
+    .sideChat-column{
+        padding-left: 1.5rem;
+        padding-right: 0;
+    }
+    
+    .sideChat h1{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .sideChat-row{
+        gap: 5px;
+    }
+
+    .sideChat-container1 h1{
+        font-size: 1.4rem;
+    }
+
+    .sideChat-column{
+        padding-left: 1.5rem;
+        padding-right: 0;
+    }
 }

@@ -1,3 +1,6 @@
+.sideOptions-container{
+    margin-left: 2rem;
+}
 .sideOptions-top img{
     width: 40%;
     border-radius: 50%;
@@ -21,4 +24,26 @@
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+}
+
+@media screen and (max-width: 600px){
+    .sideOptions-container{
+        margin-left: 0;
+    }
+
+    .sideOptions-top{
+        text-align: center;
+    }
+
+    .sideOptions-top h2{
+        font-size: 1rem;
+    }
+
+    .sideOptions-icon{
+        width: 80%;
+    }
+
+    .sideOptions-middle a{
+        padding: .2rem;
+    }
 }
