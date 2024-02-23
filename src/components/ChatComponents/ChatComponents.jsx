@@ -16,13 +16,13 @@ const ChatComponents = ({dataProfile, onMessageClick}) => {
     <div className='chatComponent pt-3'>
         {dataProfile.chatGroups.map((item, index)=>{
             const lastIndex = item.response[item.response.length - 1];
-            return <div key={index} className='chatComponent-container d-grid p-2'>
+            return <div key={index} className='chatComponent-container'>
                 <a href="" onClick={(e)=> {e.preventDefault();onMessageClick(item)}}>
-                    <div className='row'>
-                        <div className='pe-0 col-3 chat-image-container'>
+                    <div className='row chatInfo-container'>
+                        <div className='pe-0 chat-image-container'>
                             <img src={item.profile} alt="" className='img-fluid img-chat' />
                         </div>
-                        <div className='col col-7 p-0 chat-info-container'>
+                        <div className='col p-0 chat-info-container'>
                             <h5>{item.groupName}</h5>
                             {/* {lastIndex.length > 30 ? 
                             <p>{`You: ${messageDot(lastIndex,30)}`}</p> 
@@ -37,9 +37,9 @@ const ChatComponents = ({dataProfile, onMessageClick}) => {
                                 return <p key={index}>{lastChat.length-1}</p>
                             })} */}
                         </div>
-                        <div className='col col-2 p-0 d-flex align-items-center'>
+                        <div className='col p-0 d-flex align-items-center timeContainer'>
                             <p style={{fontWeight:'bold'}}>1m</p>
-                            <GoDotFill color='blue'/>
+                            <GoDotFill color='blue' className='activeIcon'/>
                         </div>
                     </div>
                 </a>

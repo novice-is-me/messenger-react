@@ -10,8 +10,8 @@ return (
         <BrowserRouter>
             <div className='main-body'>
                 <div className='row main-body-row'>
-                    <div className='col'><SideNavbar/></div>
-                    <div className='col'>
+                    <div className='col sideChat-main'><SideNavbar/></div>
+                    <div className='col mainChat-main'>
                         <Routes>
                             <Route path="/message" element={<SideChat />} /> 
                         </Routes>

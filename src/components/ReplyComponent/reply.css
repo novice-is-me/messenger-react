@@ -14,3 +14,9 @@
     align-items: end !important; 
     margin-left: 50%;
 }
+
+@media screen and (max-width: 600px) {
+    .replyComponent h4{
+        font-size: .6rem;
+    }
+}

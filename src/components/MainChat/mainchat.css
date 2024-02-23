@@ -21,3 +21,24 @@
 .mainChat-options span{
     padding-right: 1rem;
 }
+
+@media screen and (max-width: 600px){
+    .sideChat{
+        padding-right: .5rem;
+    }
+
+    .mainChat-img h2{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .mainChat-img img{
+        display: none;
+    }
+
+    .mainChat-img h2{
+        padding-left: 0;
+    }
+}

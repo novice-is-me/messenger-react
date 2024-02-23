@@ -8,7 +8,6 @@ import SearchBar from './SearchBar';
 
 const SideChat = () => {
 
-  
   const [clickedMessage, setClickedMessage] = useState('')
 
   const onItemClick = (item) =>{
@@ -20,7 +19,7 @@ const SideChat = () => {
     <div className='sideChat h-100'>
       <div className='row sideChat-row'>
         <div className='sideChat-column col'>
-          <div className='sideChat-container1 d-flex justify-content-between mb-2'>
+          <div className='sideChat-container1 mb-2'>
             <h1>Chats</h1> 
             <a href="">{<FaRegPenToSquare size={25} color='black'/>}</a> 
           </div>

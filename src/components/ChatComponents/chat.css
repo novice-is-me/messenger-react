@@ -3,6 +3,11 @@
     width: 60%;
 }
 
+.chatInfo-container{
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+}
+
 .chat-image-container{
     display: flex;
     justify-content: center;
@@ -11,7 +16,10 @@
 
 .chatComponent-container{
     border-radius: 10px;
+    display: grid;
+    padding: .75rem;
 }
+
 .chatComponent-container:hover{
     background-color: #f5f5f5;
     cursor: pointer;
@@ -33,4 +41,54 @@
 
 .img-contain{
     width: 25%;
+}
+/* 
+For tablet */
+@media screen and (max-width: 850px) {
+
+    .chatComponent-container{
+        display: flex !important;
+    }
+    .chat-info-container p,
+    .timeContainer p,
+    .timeContainer,
+    .activeIcon{
+        display: none;
+    }
+
+    .img-chat{
+        width: 100%;
+    }
+
+    .chatInfo-container{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+    }
+
+    .chat-info-container{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    .chat-info-container h5{
+        font-size: .75rem;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .chat-info-container h5{
+        display: none;
+    }
+
+    .chatInfo-container{
+        grid-template-columns: 1fr;
+    }
+
+    .chat-image-container img{
+        width: 55%;
+    }
 }

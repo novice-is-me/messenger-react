@@ -56,3 +56,21 @@
     height: 7%;
     border-radius: 50%;
 }
+
+/* 
+For tablet */
+@media screen and (max-width: 850px) {
+    .map-options img,
+    .user-container img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dropDown-title h2,
+    .members-container h2,
+    .user-container li,
+    .map-options a{
+        font-size: .75rem;
+    }
+}
