@@ -36,6 +36,30 @@
     padding-left: 0;
 }
 
+.searchInfo-main{
+    padding-top: 1rem;
+}
+
+.searchInfo-container:hover{
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+.searchInfo{
+    align-items: center;
+    padding: .75rem;
+}
+
+.searchInfo p{
+    font-weight: 500;
+    font-family: var(--font-headings);
+}
+
+.searchInfo img{
+    width: 15%;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
 
 @media screen and (max-width: 600px){
     .sideChat-container1 a{
@@ -54,6 +78,10 @@
     .sideChat h1{
         font-size: 1.25rem;
     }
+
+    .searchInfo p{
+        font-size: .75rem;
+    }
 }
 
 @media screen and (max-width: 425px){
@@ -69,5 +97,18 @@
     .sideChat-column{
         padding-left: 1.5rem;
         padding-right: 0;
+    }
+
+    .searchInfo{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .searchInfo p{
+        display: none;
+    }
+
+    .searchInfo img{
+        width: 55%;
     }
 }

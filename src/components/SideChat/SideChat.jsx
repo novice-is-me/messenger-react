@@ -9,6 +9,7 @@ import SearchBar from './SearchBar';
 const SideChat = () => {
 
   const [clickedMessage, setClickedMessage] = useState('')
+  const [focus, setFocus] = useState(false)
 
   const onItemClick = (item) =>{
     setClickedMessage(item)
@@ -24,11 +25,11 @@ const SideChat = () => {
             <a href="">{<FaRegPenToSquare size={25} color='black'/>}</a> 
           </div>
           <div className='sideChat-container2'>
-           <SearchBar data={dataProfile}/>
+           <SearchBar data={dataProfile} focus={focus} setFocus={setFocus}/>
           </div>
-          <div className='sideChat-container3'>
+          {!focus && ( <div className='sideChat-container3'>
             <ChatComponent dataProfile={dataProfile} onMessageClick={onItemClick}/>
-          </div>
+          </div>)}
         </div>
         <div className='mainChat-column col'>
           {clickedMessage && ( 
