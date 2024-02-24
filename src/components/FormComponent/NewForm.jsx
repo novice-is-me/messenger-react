@@ -26,7 +26,7 @@ const NewForm = ({convo, addReply, setAddReply}) => {
             setAddReply([...addReply, reply]); //undefined
             console.log("New Reply 3: "+ reply)
             
-          }
+          } 
         })
         // setReply(reply);
         setReply('')

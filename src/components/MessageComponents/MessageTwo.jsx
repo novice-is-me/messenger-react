@@ -30,7 +30,7 @@ const MessageTwo = ({convo}) => {
               {reply.length !==0 ? (
           <div>
             {console.log(reply)}
-            <ReplyComponent convo={reply} />
+            <ReplyComponent convo={reply}/>
           </div>
           ) : null}
             </div>

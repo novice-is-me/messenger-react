@@ -11,8 +11,29 @@
 
 .replyComponent-message{
     display: flex;
-    align-items: end !important; 
+    align-items: center !important; 
     margin-left: 50%;
+}
+
+.deleteButton:hover, 
+.emojiButton:hover{
+    cursor: pointer;
+}
+
+.modal-content{
+    text-align: center;
+}
+
+.modal-body p{
+    padding-bottom: 1rem;
+}
+
+.replyComponent .Options-message{
+    display: none;
+}
+
+.replyComponent:hover .Options-message{
+    display: block;
 }
 
 @media screen and (max-width: 600px) {
