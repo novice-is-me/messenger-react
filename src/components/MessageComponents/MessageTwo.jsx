@@ -11,7 +11,7 @@ const MessageTwo = ({convo}) => {
   const handleDelete = (index) =>{
     setAddReply(addReply.filter((item, i) => i !== index));
   }
-  
+
   return (
     <div className='messageTwo-container d-flex flex-column'>
       <div className='messageTwo-scroll'>
@@ -33,13 +33,13 @@ const MessageTwo = ({convo}) => {
         {addReply.map((reply, index)=>{
             return <div key={index}>
               {reply.length !==0 ? (
-          <div className='d-flex justify-content-end pe-3 align-items-center border border-2 body-reply'>    
+          <div className='d-flex justify-content-end pe-3 align-items-center body-reply'>    
             {console.log(reply)}
             {console.log(addReply)}
             <div className='delete-container'>
               <MdDeleteOutline onClick={()=>handleDelete(index)} className='delete-icon'/>
             </div>
-            <div className='reply-component-container border border-2'>
+            <div className='reply-component-container'>
               <ReplyComponent convo={reply}/>
             </div> 
           </div>
