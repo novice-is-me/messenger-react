@@ -3,10 +3,15 @@ import ChatBoxComponent from '../ChatBox/ChatBoxComponent'
 import ReplyComponent from '../ReplyComponent/ReplyComponent'
 import NewForm from '../FormComponent/NewForm'
 import './messageOne.css'
+import { MdDeleteOutline } from "react-icons/md";
 
 const MessageTwo = ({convo}) => {
-  const [addReply, setAddReply] = useState([])
+  const [addReply, setAddReply] = useState([]) // for adding new replies to the conversation
 
+  const handleDelete = (index) =>{
+    setAddReply(addReply.filter((item, i) => i !== index));
+  }
+  
   return (
     <div className='messageTwo-container d-flex flex-column'>
       <div className='messageTwo-scroll'>
@@ -28,13 +33,19 @@ const MessageTwo = ({convo}) => {
         {addReply.map((reply, index)=>{
             return <div key={index}>
               {reply.length !==0 ? (
-          <div>
+          <div className='d-flex justify-content-end pe-3 align-items-center border border-2 body-reply'>    
             {console.log(reply)}
-            <ReplyComponent convo={reply}/>
+            {console.log(addReply)}
+            <div className='delete-container'>
+              <MdDeleteOutline onClick={()=>handleDelete(index)} className='delete-icon'/>
+            </div>
+            <div className='reply-component-container border border-2'>
+              <ReplyComponent convo={reply}/>
+            </div> 
           </div>
           ) : null}
             </div>
-          })}
+          })}  
         </div>
       <div className='sticky-send'>
         <NewForm convo={convo} addReply={addReply} setAddReply={setAddReply}/>

@@ -4,7 +4,7 @@ import { GoDotFill } from "react-icons/go";
 
 const ChatComponents = ({dataProfile, onMessageClick}) => {
 
-    const messageDot = (message, maxLength) =>{
+    const messageDot = (message, maxLength) =>{ //to limit the length of message
         if (message.length >= maxLength){
             return message.substring(0, maxLength) + '...';
         } else{

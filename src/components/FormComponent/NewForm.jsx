@@ -3,7 +3,7 @@ import { IoAddCircle, IoSend } from "react-icons/io5";
 import { dataProfile } from '../../DataFiles/chat';
 
 const NewForm = ({convo, addReply, setAddReply}) => {
-    // const [newReply, setNewReply] = useState([])
+
     const [reply, setReply] = useState('');
     const inputRef = useRef();
 
@@ -23,7 +23,7 @@ const NewForm = ({convo, addReply, setAddReply}) => {
             convo.response.push(reply)
             console.log("Response 3" + convo.response);
             console.log("Reply: "+ reply);
-            setAddReply([...addReply, reply]); //undefined
+            setAddReply([...addReply, reply]); 
             console.log("New Reply 3: "+ reply)
             
           } 

@@ -11,3 +11,15 @@
     margin-bottom: 1rem;
     margin-right: 1rem;
 }
+
+.delete-container{
+    display: none;
+    cursor: pointer;
+}
+
+.reply-component-container:hover{
+    cursor: pointer;
+}
+.body-reply:hover .delete-container{
+    display: block;
+}  

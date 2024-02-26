@@ -8,12 +8,13 @@ import SearchBar from './SearchBar';
 
 const SideChat = () => {
 
-  const [clickedMessage, setClickedMessage] = useState('')
-  const [focus, setFocus] = useState(false)
+  const [clickedMessage, setClickedMessage] = useState('') // to track the clicked message/data
+  const [focus, setFocus] = useState(false) //to know state of the search
+  
 
   const onItemClick = (item) =>{
     setClickedMessage(item)
-    console.log("Item:"+clickedMessage);
+    console.log("Item:"+ clickedMessage);
   }
 
   return (
@@ -22,7 +23,7 @@ const SideChat = () => {
         <div className='sideChat-column col'>
           <div className='sideChat-container1 mb-2'>
             <h1>Chats</h1> 
-            <a href="">{<FaRegPenToSquare size={25} color='black'/>}</a> 
+            <a href="" onClick={(e) => e.preventDefault()}>{<FaRegPenToSquare size={25} color='black'/>}</a> 
           </div>
           <div className='sideChat-container2'>
            <SearchBar data={dataProfile} focus={focus} setFocus={setFocus}/>

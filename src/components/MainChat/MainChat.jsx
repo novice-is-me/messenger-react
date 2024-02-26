@@ -9,9 +9,9 @@ import SideOptions from '../SideOptions/SideOptions';
 
 const MainChat = ({clickedMessage}) => {
 
-  const [isShow, setIsShow] = useState(false)
+  const [isShow, setIsShow] = useState(false) //to track the state of the side options
 
-  const handleClick = () =>{
+  const handleClick = () =>{ //function to handle the click of the side options
     setIsShow(!isShow);
     console.log(isShow)
   }
